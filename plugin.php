@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: WSUWP Plugin Skeleton
+Plugin Name: CAHNRSWSUWP People Profiles
 Version: 0.0.1
-Description: A skeleton project to use when starting a new WSU WordPress plugin. Replace this description.
-Author: washingtonstateuniversity, [Other Plugin Authors]
+Description: Allow local profiles that sync downstream from people.wsu.edu.
+Author: washingtonstateuniversity, Danial Bleile
 Author URI: https://web.wsu.edu/
-Plugin URI: https://github.com/washingtonstateuniversity/wsuwp-plugin-skeleton
-Text Domain: wsuwp-plugin-skeleton
+Plugin URI: https://github.com/washingtonstateuniversity/cahnrswsuwp-plugin-people
+Text Domain: cahnrswsuwp-plugin-people
 */
 
 // If this file is called directly, abort.
@@ -20,5 +20,11 @@ if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
 	"echo '<div class=\"error\"><p>" . __( 'WSUWP Plugin Skeleton requires PHP 5.3 to function properly. Please upgrade PHP or deactivate the plugin.', 'wsuwp-plugin-skeleton' ) . "</p></div>';" ) );
 	return;
 } else {
-	include_once __DIR__ . '/includes/wsuwp-plugin-skeleton.php';
+
+	include_once __DIR__ . '/functions.php';
+
+	include_once __DIR__ . '/includes/include-cahnrswsuwp-plugin-people.php';
+
+	$cahnrswsuwp_plugin_people = WSUWP\CAHNRSWSUWP_Plugin_People\CAHNRSWSUWP_Plugin_People::get_instance();
+
 }
