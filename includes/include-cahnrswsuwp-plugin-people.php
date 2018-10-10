@@ -39,6 +39,8 @@ class CAHNRSWSUWP_Plugin_People {
 
 		include_once people_get_plugin_dir_path() . '/includes/include-cahnrswsuwp-content-syndicate.php';
 
+		include __DIR__ . '/include-post-feed.php';
+
 	} // End init_plugin
 
 

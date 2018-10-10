@@ -23,6 +23,9 @@ class Profile_Post_Type {
 		'_wsuwp_profile_position_title' => array(
 			'sanitize_type' => 'text',
 		),
+		'_wsuwp_profile_affiliation' => array(
+			'sanitize_type' => 'text',
+		),
 		'_wsuwp_profile_office' => array(
 			'sanitize_type' => 'text',
 		),
@@ -84,6 +87,8 @@ class Profile_Post_Type {
 			$last_name_ph                 = $person->last_name_remote;
 			$position_title               = $person->position_title;
 			$position_title_ph            = $person->position_title_remote;
+			$affiliation                  = $person->affiliation;
+			$affiliation_ph               = $person->affiliation_remote;
 			$office                       = $person->office;
 			$office_ph                    = $person->office_remote;
 			$phone                        = $person->phone;
