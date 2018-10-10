@@ -180,6 +180,7 @@ class Profile_Post_Type {
 			'menu_position'      => null,
 			'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
 			'show_in_rest'       => true,
+			'taxonomies'         => array( 'category','post_tag' ),
 		);
 
 		register_post_type( 'profile', $args );
