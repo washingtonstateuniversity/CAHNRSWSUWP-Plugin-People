@@ -13,6 +13,8 @@ class Person {
 	public $nid_remote                      = '';
 	public $external_profile                = '';
 	// Contact Card
+	public $affiliation                     = '';
+	public $affiliation_remote              = '';
 	public $display_name                    = '';
 	public $last_name                       = '';
 	public $last_name_remote                = '';
@@ -64,6 +66,7 @@ class Person {
 		$this->nid                             = get_post_meta( $post_id, '_wsuwp_profile_nid', true );
 		$this->external_profile                = get_post_meta( $post_id, '_wsuwp_profile_external_profile', true );
 		// Contact Card
+		$this->affiliation                     = get_post_meta( $post_id, '_wsuwp_profile_affiliation', true );
 		$this->display_name                    = get_the_title( $post_id );
 		$this->last_name                       = get_post_meta( $post_id, '_wsuwp_profile_last_name', true );
 		$this->profile_image                   = $this->get_local_profile_image( $post_id );

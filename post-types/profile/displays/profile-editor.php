@@ -7,6 +7,8 @@
  * @var string $last_name_ph
  * @var string $position_title
  * @var string $position_title_ph
+ * @var string $affiliation
+ * @var string $affiliation_ph
  * @var string $office
  * @var string $office_ph
  * @var string $phone
@@ -64,6 +66,10 @@
 		<div class="cpeople-field cpeople-text-field">
 			<label>Position Title</label>
 			<input type="text" name="_wsuwp_profile_position_title" value="<?php echo esc_attr( $position_title ); ?>" placeholder="<?php echo esc_attr( $position_title_ph ); ?>" />
+		</div>
+		<div class="cpeople-field cpeople-text-field">
+			<label>Affiliation</label>
+			<input type="text" name="_wsuwp_profile_affiliation" value="<?php echo esc_attr( $affiliation ); ?>" placeholder="<?php echo esc_attr( $affiliation_ph ); ?>" />
 		</div>
 		<div class="cpeople-field cpeople-text-field">
 			<label>Office</label>
