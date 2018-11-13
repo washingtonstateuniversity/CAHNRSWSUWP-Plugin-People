@@ -9,7 +9,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 class Profile_Post_Type {
 
-	// @var $post_settings Settings for the Save_Post_API to use. 
+	// @var $post_settings Settings for the Save_Post_API to use.
 	protected $post_settings = array(
 		'_wsuwp_profile_nid' => array(
 			'sanitize_type' => 'text',
@@ -167,20 +167,21 @@ class Profile_Post_Type {
 		);
 
 		$args = array(
-			'labels'             => $labels,
-			'description'        => __( 'Description.', 'cahnrswsuwp-plugin-people' ),
-			'public'             => true,
-			'publicly_queryable' => true,
-			'show_ui'            => true,
-			'show_in_menu'       => true,
-			'query_var'          => true,
-			'capability_type'    => 'post',
-			'has_archive'        => true,
-			'hierarchical'       => false,
-			'menu_position'      => null,
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
-			'show_in_rest'       => true,
-			'taxonomies'         => array( 'category','post_tag' ),
+			'labels'              => $labels,
+			'description'         => __( 'Description.', 'cahnrswsuwp-plugin-people' ),
+			'public'              => true,
+			'publicly_queryable'  => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'query_var'           => true,
+			'capability_type'     => 'post',
+			'has_archive'         => true,
+			'exclude_from_search' => true,
+			'hierarchical'        => false,
+			'menu_position'       => null,
+			'supports'            => array( 'title', 'editor', 'author', 'thumbnail' ),
+			'show_in_rest'        => true,
+			'taxonomies'          => array( 'category', 'post_tag' ),
 		);
 
 		register_post_type( 'profile', $args );
