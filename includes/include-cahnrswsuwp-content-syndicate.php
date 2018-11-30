@@ -30,7 +30,7 @@ class CAHNRSWSUWP_Content_Syndicate {
 				if ( ! isset( $remote_person->profile_photo ) || empty( $remote_person->profile_photo ) ) {
 
 					$remote_person->profile_photo = people_get_plugin_url() . '/images/person-placeholder.png';
-		
+
 				} // End if
 
 				$nid = ( isset( $remote_person->nid ) && ! empty( $remote_person->nid ) ) ? $remote_person->nid : '';
@@ -81,11 +81,11 @@ class CAHNRSWSUWP_Content_Syndicate {
 
 		} // End if
 
-		if ( isset( $local_person->display_name ) && ! empty( $local_person->display_name  ) ) {
+		if ( isset( $local_person->display_name ) && ! empty( $local_person->display_name ) ) {
 
 			$remote_person->title->rendered = $local_person->display_name;
 
-		} // End if 
+		} // End if
 
 		if ( isset( $local_person->bio ) && ! empty( $local_person->bio ) ) {
 
