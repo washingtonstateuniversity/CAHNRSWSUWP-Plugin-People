@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: CAHNRSWSUWP People Profiles
-Version: 0.0.2
+Version: 0.0.3
 Description: Allow local profiles that sync downstream from people.wsu.edu.
 Author: washingtonstateuniversity, Danial Bleile
 Author URI: https://web.wsu.edu/
